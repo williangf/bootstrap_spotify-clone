@@ -1,0 +1,249 @@
+/* ==================== Layout ==================== */
+html, body, .capa{
+	height: 100%;
+}
+
+body{
+
+	background: url('../imagens/capa.png'),
+				url('../imagens/ruido.png'),
+				linear-gradient(50deg,#ff4169, #7c26f8);
+	background-attachment: fixed;
+	font-family: Helvetica,Arial,sans-serif;
+	overflow-x: hidden;
+
+
+}
+
+/* --- Barra de Navegação --- */
+.img-logo{
+
+	height: 40px;
+	width: 132px;
+	display: block;
+	background: url('../imagens/spotify.svg') no-repeat;
+	background-size: contain;
+	color: transparent;
+}
+
+nav.navbar-transparente{
+
+	padding: 15px 0px;
+	background: rgba(0,0,0, 0.6);
+	border: none;
+
+}
+
+.navbar-brand{
+	padding: 5px 15px;
+}
+
+.divisor{
+
+	width: 1px;
+	height: 16px;
+	background: white;
+	margin: 17px 10px;
+
+}
+
+.navbar-inverse .navbar-nav>li>a, footer .nav a{
+	color: white;
+}
+.navbar-inverse .navbar-nav>li>a:hover, footer .nav a:hover{
+	color: #9bf0e1;
+	background: none;
+}
+
+/* --- Imagem de Capa --- */
+.capa{
+	display: table;
+	width: 100%;
+}
+
+.texto-capa{
+	text-align: center;
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/* --- Botões --- */
+.btn-custom{
+	color: white;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	padding: 10px 35px;
+	margin: 0px 15px;
+	text-transform: uppercase;
+	transition: background 0.4s, color 0.4s;
+}
+
+.btn-roxo{
+	background: #7c25f8;
+}
+.btn-roxo:hover{
+	background: #6207e3;
+	color: white;
+}
+
+.btn-branco{
+	border: 2px solid white;
+}
+.btn-branco:hover{
+	background: white;
+	color: black;
+}
+
+/* --- Section Servico --- */
+#servicos{
+	background: white;
+	padding: 20px 0px;
+}
+
+.albuns{
+	padding: 15px 0px;
+}
+
+/* --- Section Recursos --- */
+#recursos{
+	padding: 20px 0px;
+	color: white;
+}
+
+.rotacionar{
+	transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	padding-left: 80px;
+}
+
+/* --- Rodape --- */
+footer{
+	background: black;
+	padding: 50px 0px 20px 0px;
+	position: relative;
+}
+
+.item-rede-social{
+	float: right;
+}
+
+.final{
+	text-align: center;
+	color: white;
+	background: rgba(0,0,0,0.8);
+	padding: 5px;
+	letter-spacing: 2px;
+	font-weight: 300;
+	text-shadow: 0px 0px 5px #9bf0e1;
+}
+
+.final p{
+	background: none;
+}
+
+/* ==================== Tipografia ==================== */
+h1{
+	font-size: 100px;
+	font-weight: 900;
+	letter-spacing: -0.05em;
+	margin-bottom: 50px;
+}
+
+h2{
+	font-size: 50px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+h3{
+	font-size: 35px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+#rodape h4{
+	color: #919496;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+#servicos h2, #servicos h3{
+	color: #7c25f8;
+}
+
+#recursos h3{
+	color: #9bf0e1;
+}
+
+
+
+.homepage-hero-module {
+  border-right: none;
+  border-left: none;
+  position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+  display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+  display: block !important;
+}
+.video-container {
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+  border-top: 5px white solid;
+}
+.video-container .poster img {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+.video-container .filter {
+  z-index: 100;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+}
+.video-container .title-container {
+  z-index: 1000;
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.video-container .description .inner {
+  font-size: 1em;
+  width: 45%;
+  margin: 0 auto;
+}
+.video-container .link {
+  position: absolute;
+  bottom: 3em;
+  width: 100%;
+  text-align: center;
+  z-index: 1001;
+  font-size: 2em;
+  color: #fff;
+}
+.video-container .link a {
+  color: #fff;
+}
+.video-container video {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+}
+.video-container video.fillWidth {
+  width: 100%;
+}
